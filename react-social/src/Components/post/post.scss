@@ -1,0 +1,70 @@
+@import "../sass.scss";
+
+.post{
+    width: 100%;
+    box-shadow: 0px 1px 7px 0px rgba(212,212,212,0.75);
+    margin: 30px 0;
+    .pWrapper{
+        padding: 10px;
+        .ptop{
+            @include flex-box(center,space-between);
+            .ptLeft{
+            @include flex-box(center,none);
+                .ptImg{
+                    width: 32px;
+                    height: 32px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+                .pUsername{
+                    font-size: 15px;
+                    font-weight: 500;
+                    margin: 0 10px;
+                }
+                .pDate{
+                    font-size: 12px;
+                }
+            }
+            // .ptRight{}
+        }
+        .pCenter{
+            margin: 10px 0;
+            .pText{}
+            .pImg{
+                margin: 10px 0;
+                width: 100%;
+                max-height: 500px;
+                object-fit: contain;
+            }
+        }
+
+
+
+        .pBottom{
+            @include flex-box(center,space-between);
+            .pbLeft{
+                display: flex;
+                align-items: center;
+                .likeIcon{
+                    width: 24px;
+                    height: 24px;
+                    margin-right: 5px;
+                    cursor: pointer;
+                }
+                .likeCounter{
+                    cursor: pointer;
+                    font-size: 15px;
+                }
+            }
+            .pbRight{
+                .pbText{
+                    cursor: pointer;
+                    font-size: 15px;
+                    border-bottom: 1px solid gray;
+                }
+            }
+        }
+    }
+
+
+}

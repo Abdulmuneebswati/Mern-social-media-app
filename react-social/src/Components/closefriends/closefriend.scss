@@ -1,0 +1,15 @@
+.sbFriend{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 10px;
+    .sbfimg{
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .sbfName{
+        font-weight: normal;
+    }
+}

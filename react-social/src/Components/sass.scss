@@ -1,0 +1,12 @@
+@mixin flex-box($ai,$jc){
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}
+$bg:rgb(32, 32, 32);
+
+@mixin input{
+    border: none;
+    outline: none;
+}
+

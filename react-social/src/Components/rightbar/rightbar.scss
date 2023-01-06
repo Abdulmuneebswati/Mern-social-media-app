@@ -1,0 +1,116 @@
+@import "../sass.scss";
+
+.rightBar{
+    flex: 25%;
+    .rWrapper{
+        padding: 20px 20px 0 0 ;
+        .birthDayContainer{
+            display: flex;
+            align-items: center;
+            .birtdayImg{
+                width: 40px;
+                height: 40px;
+
+            }
+            .birtdayText{
+                font-size: 15px;
+                font-weight: 300;
+            }
+        }
+        .rbAdvertisement{
+            width: 100%;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        .rbTitle{
+            margin-bottom: 20px;
+        }
+        .rbFriendist{
+            margin: 0;padding: 0;
+            list-style: none;
+            .rbFriend{
+                display: flex;
+               align-items: center;
+               margin-bottom: 15px;
+               .rbUsername{
+                   font-weight: 500;
+               }
+               .rbImgcon{
+                   margin-right: 10px;
+                   position: relative;
+                   .rbImg{
+                       width: 40px;
+                       height: 40px;
+                       border-radius: 50%;
+                       object-fit: cover;
+                   }
+                   .rbOnline{
+                       width: 12px;
+                       height: 12px;
+                       border-radius: 50%;
+                       background-color: limegreen;
+                       position: absolute;
+                       top: -2px;
+                       right: 0;
+                       border: 2px solid white;
+                   }
+               }
+            }
+            
+        }
+        .followbtn{
+            margin-top: 30px;
+            margin-bottom: 10px;
+            border: none;
+            background-color: #111;
+            color: white;border-radius: 5px;
+            padding: 5px;display: flex;align-items: center;cursor: pointer;
+        }
+        .uiTitle{
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 10px;
+            
+        }
+        .mbInfo{
+            margin-bottom: 30px;
+        .infoContainer{
+            margin-bottom: 10px;
+            .infoKey{
+                font-weight: 500;
+                margin-right: 15px;
+                color: #555;
+            }
+            .infoValue{
+                font-weight: 300;
+                color: #555;
+
+            }
+        }
+    }
+        .rbFollowings{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+            .rbFollowing{
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+                margin-bottom: 10px;
+                align-items: center;
+                .rbFollowingimg{
+                   width: 100px;
+                   height: 100px;
+                   object-fit: cover;
+                   border-radius: 5px;
+                }
+                .rbFollowingname{
+                        font-weight: bold;
+                color: #555;
+
+                }
+            }
+        }
+    }
+}

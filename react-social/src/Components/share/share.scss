@@ -1,0 +1,63 @@
+@import "../sass.scss";
+
+.share{
+    width: 100%;
+    height: 170px;
+    border-radius: 10px;
+    // background-color: green;
+    box-shadow: 0px 1px 7px 0px rgba(212,212,212,0.75);
+    .sWrapper{
+        padding: 10px;
+        .sTop{
+            display: flex;
+            align-items: center;
+            .sImg{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 10px;
+            }
+            .sInput{
+                @include input;
+                width: 80%;
+                color: black;
+
+            }
+        }
+        .sHr{
+            margin: 20px;
+        }
+        .sBottom{
+            @include flex-box(center,space-between);
+            .sOptions{
+                display: flex;
+                margin-left: 20px;
+                .sOption{
+            @include flex-box(center,none);
+                    margin-right: 15px;
+                    cursor: pointer;
+
+                    .sIcon{
+                        font-size: 18px;
+
+                    }
+                    .sOptiontext{
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .sBtn{
+                border: none;
+                padding: 7px;
+                border-radius: 5px;
+                background-color: rgb(148, 148, 235);
+                font-weight: bold;
+                margin-right: 20px;
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+}

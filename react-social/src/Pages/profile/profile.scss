@@ -1,0 +1,45 @@
+@import "../../Components/sass.scss";
+
+.profile{
+    display: flex;
+    .profileRight{
+        flex: 75%;
+        .prTop{
+            .pCover{
+                height: 320px;
+                position: relative;
+            .coverPic{
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+            }
+            .profilePic{
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+                border-radius: 50%;
+
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 150px;
+                border: 3px solid white;
+            }
+        }
+        .pInfo{
+            @include flex-box(center,center);
+            flex-direction: column;
+            .piName{
+                font-size: 24px;
+            }
+            .piDesc{
+                font-weight: 300;
+            }
+        }
+        }
+        .prBottom{
+            display: flex;
+        }
+    }
+}
